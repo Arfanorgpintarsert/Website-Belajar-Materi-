@@ -1,0 +1,72 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kimia Kelas XI — Ruang Belajar XI</title><style>
+:root{--bg:#f6f7fb;--card:#fff;--text:#182033;--muted:#667085;--primary:#5b5bd6;--primary2:#7c3aed;--border:#e7e9f2;--good:#16834b;--bad:#c93636}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+a{text-decoration:none;color:inherit}.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.navin{max-width:1100px;margin:auto;padding:12px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-weight:900;color:var(--primary);font-size:1.05rem}.links{display:flex;gap:7px;flex-wrap:wrap}.links a{padding:7px 10px;border-radius:10px;font-size:.9rem}.links a:hover{background:#f0efff}
+.hero{background:linear-gradient(135deg,#161a35,#4b3fb8 55%,#7c3aed);color:#fff}.heroIn{max-width:1100px;margin:auto;padding:62px 18px 54px}.eyebrow{opacity:.8;font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:.78rem}.hero h1{font-size:clamp(2rem,5vw,3.8rem);line-height:1.08;margin:10px 0 12px}.hero p{max-width:760px;opacity:.9;font-size:1.05rem}
+.container{max-width:1100px;margin:auto;padding:30px 18px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}.card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:20px;box-shadow:0 6px 20px rgba(25,30,60,.04)}.card h2,.card h3{margin-top:0}.btn{display:inline-block;background:var(--primary);color:#fff;padding:10px 15px;border-radius:11px;font-weight:800}.btn.alt{background:#eeeefe;color:#3f3ca7}.btn.small{padding:7px 11px;font-size:.88rem}
+.topic{margin:22px 0;background:#fff;border:1px solid var(--border);border-radius:18px;overflow:hidden}.topicHead{padding:18px 20px;background:#fafaff;border-bottom:1px solid var(--border)}.topicHead h2{margin:0 0 3px}.topicBody{padding:20px}.topicBody h3{color:#423bb0;margin:18px 0 7px}.formula{padding:13px 15px;border-left:4px solid var(--primary);background:#f4f3ff;border-radius:9px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;overflow:auto}.note{padding:13px 15px;background:#fff8df;border:1px solid #f2df9c;border-radius:10px}.tableWrap{overflow:auto}.tbl{border-collapse:collapse;width:100%;min-width:580px}.tbl th,.tbl td{border:1px solid var(--border);padding:9px;text-align:left}.tbl th{background:#f5f5ff}
+.quiz{margin-top:20px;padding:18px;background:#f8f8ff;border:1px solid #e1defe;border-radius:15px}.q{padding:14px 0;border-bottom:1px solid var(--border)}.q:last-child{border-bottom:0}.q label{display:block;margin:7px 0;padding:9px 11px;border:1px solid var(--border);border-radius:9px;background:#fff;cursor:pointer}.q label:hover{background:#f5f5ff}.result{font-weight:800;margin-top:12px}.correct{color:var(--good)}.wrong{color:var(--bad)}
+.search{width:100%;padding:13px 15px;border:1px solid var(--border);border-radius:12px;font-size:1rem;margin:10px 0 18px}.music{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:center}.music iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:14px}.muted{color:var(--muted)}footer{margin-top:35px;padding:25px 18px;text-align:center;border-top:1px solid var(--border);color:var(--muted);font-size:.9rem}
+@media(max-width:720px){.navin{align-items:flex-start;flex-direction:column}.music{grid-template-columns:1fr}.heroIn{padding-top:45px}.container{padding-top:22px}.topicBody{padding:16px}}
+</style></head><body><nav class="nav"><div class="navin"><a class="brand" href="index.html">Ruang Belajar XI</a>
+    <div class="links"><a href="index.html">Beranda</a><a href="fisika.html">Fisika</a><a href="kimia.html">Kimia</a><a href="biologi.html">Biologi</a><a href="quiz.html">Quiz</a></div></div></nav><section class="hero"><div class="heroIn"><div class="eyebrow">Materi Lengkap</div><h1>Kimia Kelas XI</h1><p>Konsep, persamaan penting, dan aplikasi.</p></div></section><main class="container"><input id="search" class="search" oninput="filterTopics()" placeholder="Cari topik Kimia..."><section class="topic"><div class="topicHead"><h2>Termokimia</h2><div class="muted">Perubahan energi dalam reaksi kimia.</div></div><div class="topicBody">
+<p>Termokimia mempelajari kalor yang menyertai reaksi. Sistem dapat menyerap atau melepaskan energi.</p>
+<h3>Perubahan entalpi</h3><div class="formula">ΔH = H_produk − H_pereaksi</div><p>Reaksi eksoterm memiliki ΔH negatif, sedangkan endoterm memiliki ΔH positif.</p>
+<h3>Hukum Hess</h3><p>Perubahan entalpi total tidak bergantung pada jalur reaksi. Jika beberapa reaksi dijumlahkan, ΔH-nya juga dijumlahkan.</p>
+<h3>Energi ikatan</h3><div class="formula">ΔH ≈ ΣE(ikatan diputus) − ΣE(ikatan terbentuk)</div>
+    <div class="quiz"><h3>📝 Quiz: Termokimia</h3><form id="f8011700244493028683"><div class="q" data-answer="1"><b>1. Reaksi eksoterm mempunyai...</b><label><input type="radio" name="q1" value="0"> A. ΔH positif</label><label><input type="radio" name="q1" value="1"> B. ΔH negatif</label><label><input type="radio" name="q1" value="2"> C. ΔH nol selalu</label><label><input type="radio" name="q1" value="3"> D. tidak memiliki energi</label></div></form>
+    <button class="btn" onclick="grade('f8011700244493028683','r8011700244493028683')">Periksa Jawaban</button><div id="r8011700244493028683" class="result"></div></div></div></section><section class="topic"><div class="topicHead"><h2>Laju Reaksi</h2><div class="muted">Kecepatan berlangsungnya reaksi.</div></div><div class="topicBody">
+<p>Laju reaksi menyatakan perubahan konsentrasi pereaksi atau produk per satuan waktu.</p>
+<div class="formula">v = −Δ[pereaksi]/Δt = Δ[produk]/Δt</div>
+<h3>Faktor yang memengaruhi</h3><ul><li>konsentrasi</li><li>luas permukaan</li><li>suhu</li><li>katalis</li><li>sifat zat</li></ul>
+<p>Menurut teori tumbukan, reaksi efektif terjadi jika partikel bertumbukan dengan energi cukup dan orientasi yang sesuai. Katalis menyediakan jalur reaksi dengan energi aktivasi lebih rendah.</p>
+    <div class="quiz"><h3>📝 Quiz: Laju Reaksi</h3><form id="f167435706216408058"><div class="q" data-answer="1"><b>1. Katalis bekerja dengan cara utama...</b><label><input type="radio" name="q1" value="0"> A. menaikkan energi aktivasi</label><label><input type="radio" name="q1" value="1"> B. menurunkan energi aktivasi</label><label><input type="radio" name="q1" value="2"> C. mengubah hasil akhir menjadi nol</label><label><input type="radio" name="q1" value="3"> D. menghilangkan semua pereaksi</label></div></form>
+    <button class="btn" onclick="grade('f167435706216408058','r167435706216408058')">Periksa Jawaban</button><div id="r167435706216408058" class="result"></div></div></div></section><section class="topic"><div class="topicHead"><h2>Kesetimbangan Kimia</h2><div class="muted">Kesetimbangan dinamis pada reaksi reversibel.</div></div><div class="topicBody">
+<p>Kesetimbangan kimia terjadi saat laju reaksi maju sama dengan laju reaksi balik. Konsentrasi makroskopis tampak tetap, tetapi reaksi tetap berlangsung secara dinamis.</p>
+<h3>Konstanta kesetimbangan</h3><div class="formula">Kc = [produk]^koef / [pereaksi]^koef</div>
+<h3>Asas Le Chatelier</h3><p>Jika sistem setimbang diberi gangguan, sistem cenderung bergeser untuk mengurangi pengaruh gangguan tersebut.</p>
+<p>Perubahan konsentrasi, tekanan/volume (untuk gas), dan suhu dapat memengaruhi posisi kesetimbangan. Katalis mempercepat tercapainya kesetimbangan tetapi tidak mengubah nilai K pada suhu tetap.</p>
+    <div class="quiz"><h3>📝 Quiz: Kesetimbangan Kimia</h3><form id="f2668811262309203755"><div class="q" data-answer="1"><b>1. Katalis pada sistem setimbang...</b><label><input type="radio" name="q1" value="0"> A. mengubah K</label><label><input type="radio" name="q1" value="1"> B. mempercepat tercapainya kesetimbangan</label><label><input type="radio" name="q1" value="2"> C. selalu menggeser ke kanan</label><label><input type="radio" name="q1" value="3"> D. menghentikan reaksi balik</label></div></form>
+    <button class="btn" onclick="grade('f2668811262309203755','r2668811262309203755')">Periksa Jawaban</button><div id="r2668811262309203755" class="result"></div></div></div></section><section class="topic"><div class="topicHead"><h2>Asam dan Basa</h2><div class="muted">Konsep pH, asam kuat/lemah, dan basa.</div></div><div class="topicBody">
+<p>Menurut Arrhenius, asam menghasilkan H⁺ dalam air dan basa menghasilkan OH⁻. Menurut Brønsted-Lowry, asam donor proton dan basa akseptor proton.</p>
+<h3>pH</h3><div class="formula">pH = −log[H⁺]</div><div class="formula">pOH = −log[OH⁻]</div><div class="formula">pH + pOH = 14 (25°C)</div>
+<p>Asam kuat dan basa kuat terionisasi hampir sempurna. Asam/basa lemah hanya terionisasi sebagian sehingga memiliki Ka/Kb.</p>
+    <div class="quiz"><h3>📝 Quiz: Asam dan Basa</h3><form id="f2454044290077927035"><div class="q" data-answer="0"><b>1. Larutan dengan pH 3 bersifat...</b><label><input type="radio" name="q1" value="0"> A. asam</label><label><input type="radio" name="q1" value="1"> B. basa</label><label><input type="radio" name="q1" value="2"> C. netral</label><label><input type="radio" name="q1" value="3"> D. selalu garam</label></div></form>
+    <button class="btn" onclick="grade('f2454044290077927035','r2454044290077927035')">Periksa Jawaban</button><div id="r2454044290077927035" class="result"></div></div></div></section><section class="topic"><div class="topicHead"><h2>Larutan Penyangga</h2><div class="muted">Larutan yang mempertahankan pH relatif stabil.</div></div><div class="topicBody">
+<p>Buffer biasanya terdiri dari asam lemah dan basa konjugatnya, atau basa lemah dan asam konjugatnya.</p>
+<h3>Buffer asam</h3><div class="formula">pH = pKa + log([A⁻]/[HA])</div>
+<h3>Buffer basa</h3><div class="formula">pOH = pKb + log([BH⁺]/[B])</div>
+<p>Buffer bekerja karena komponen penyusunnya dapat bereaksi dengan sedikit H⁺ atau OH⁻ yang ditambahkan.</p>
+    <div class="quiz"><h3>📝 Quiz: Larutan Penyangga</h3><form id="f7250375128522097387"><div class="q" data-answer="0"><b>1. Fungsi utama larutan buffer adalah...</b><label><input type="radio" name="q1" value="0"> A. mempertahankan pH relatif stabil</label><label><input type="radio" name="q1" value="1"> B. membuat semua zat netral</label><label><input type="radio" name="q1" value="2"> C. selalu menaikkan pH</label><label><input type="radio" name="q1" value="3"> D. selalu menurunkan pH</label></div></form>
+    <button class="btn" onclick="grade('f7250375128522097387','r7250375128522097387')">Periksa Jawaban</button><div id="r7250375128522097387" class="result"></div></div></div></section><section class="topic"><div class="topicHead"><h2>Hidrolisis Garam dan Ksp</h2><div class="muted">Reaksi ion garam dengan air dan kelarutan garam.</div></div><div class="topicBody">
+<p>Hidrolisis garam adalah reaksi ion tertentu dari garam dengan air yang dapat memengaruhi pH larutan. Garam dari asam kuat dan basa kuat umumnya tidak mengalami hidrolisis berarti.</p>
+<h3>Ksp</h3><div class="formula">Ksp = hasil kali konsentrasi ion pada keadaan jenuh, masing-masing dipangkatkan koefisiennya.</div>
+<p>Jika hasil kali ion Q lebih kecil dari Ksp, larutan belum jenuh. Jika Q lebih besar dari Ksp, pengendapan cenderung terjadi.</p>
+    <div class="quiz"><h3>📝 Quiz: Hidrolisis Garam dan Ksp</h3><form id="f1553583853249471656"><div class="q" data-answer="0"><b>1. Jika Qsp > Ksp, kecenderungan sistem adalah...</b><label><input type="radio" name="q1" value="0"> A. mengendap</label><label><input type="radio" name="q1" value="1"> B. melarut seluruhnya</label><label><input type="radio" name="q1" value="2"> C. tidak berubah sama sekali</label><label><input type="radio" name="q1" value="3"> D. menguap</label></div></form>
+    <button class="btn" onclick="grade('f1553583853249471656','r1553583853249471656')">Periksa Jawaban</button><div id="r1553583853249471656" class="result"></div></div></div></section><section class="topic"><div class="topicHead"><h2>Elektrokimia</h2><div class="muted">Redoks, sel volta, dan elektrolisis.</div></div><div class="topicBody">
+<p>Elektrokimia mempelajari hubungan reaksi redoks dengan energi listrik.</p>
+<h3>Oksidasi dan reduksi</h3><p>Oksidasi adalah pelepasan elektron, reduksi adalah penerimaan elektron. <b>Katode</b> selalu tempat reduksi dan <b>anode</b> selalu tempat oksidasi.</p>
+<h3>Sel volta</h3><div class="formula">E°sel = E°katode − E°anode</div>
+<p>Sel volta menghasilkan energi listrik dari reaksi spontan. Elektrolisis menggunakan energi listrik untuk mendorong reaksi nonspontan.</p>
+    <div class="quiz"><h3>📝 Quiz: Elektrokimia</h3><form id="f2669444346585943102"><div class="q" data-answer="1"><b>1. Di katode selalu terjadi...</b><label><input type="radio" name="q1" value="0"> A. oksidasi</label><label><input type="radio" name="q1" value="1"> B. reduksi</label><label><input type="radio" name="q1" value="2"> C. netralisasi</label><label><input type="radio" name="q1" value="3"> D. hidrolisis</label></div></form>
+    <button class="btn" onclick="grade('f2669444346585943102','r2669444346585943102')">Periksa Jawaban</button><div id="r2669444346585943102" class="result"></div></div></div></section><a class="btn" href="quiz.html#kimia">Kumpulan Quiz Kimia →</a></main><footer>© 2026 Ruang Belajar XI</footer><script>
+function grade(formId, outId){
+ const f=document.getElementById(formId), out=document.getElementById(outId);
+ let score=0,total=0;
+ f.querySelectorAll('[data-answer]').forEach(q=>{
+   total++;
+   const a=q.querySelector('input:checked');
+   if(a && a.value===q.dataset.answer) score++;
+ });
+ out.textContent=`Nilai: ${score}/${total} (${Math.round(score/total*100)}%)`;
+ out.className='result '+(score===total?'correct':'');
+}
+function filterTopics(){
+ const s=(document.getElementById('search')?.value||'').toLowerCase();
+ document.querySelectorAll('.topic,.card[data-topic]').forEach(x=>{
+   x.style.display=x.innerText.toLowerCase().includes(s)?'':'none';
+ });
+}
+</script></body></html>

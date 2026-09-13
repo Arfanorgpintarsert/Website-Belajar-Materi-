@@ -1,0 +1,78 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fisika Kelas XI — Ruang Belajar XI</title><style>
+:root{--bg:#f6f7fb;--card:#fff;--text:#182033;--muted:#667085;--primary:#5b5bd6;--primary2:#7c3aed;--border:#e7e9f2;--good:#16834b;--bad:#c93636}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+a{text-decoration:none;color:inherit}.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.navin{max-width:1100px;margin:auto;padding:12px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-weight:900;color:var(--primary);font-size:1.05rem}.links{display:flex;gap:7px;flex-wrap:wrap}.links a{padding:7px 10px;border-radius:10px;font-size:.9rem}.links a:hover{background:#f0efff}
+.hero{background:linear-gradient(135deg,#161a35,#4b3fb8 55%,#7c3aed);color:#fff}.heroIn{max-width:1100px;margin:auto;padding:62px 18px 54px}.eyebrow{opacity:.8;font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:.78rem}.hero h1{font-size:clamp(2rem,5vw,3.8rem);line-height:1.08;margin:10px 0 12px}.hero p{max-width:760px;opacity:.9;font-size:1.05rem}
+.container{max-width:1100px;margin:auto;padding:30px 18px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}.card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:20px;box-shadow:0 6px 20px rgba(25,30,60,.04)}.card h2,.card h3{margin-top:0}.btn{display:inline-block;background:var(--primary);color:#fff;padding:10px 15px;border-radius:11px;font-weight:800}.btn.alt{background:#eeeefe;color:#3f3ca7}.btn.small{padding:7px 11px;font-size:.88rem}
+.topic{margin:22px 0;background:#fff;border:1px solid var(--border);border-radius:18px;overflow:hidden}.topicHead{padding:18px 20px;background:#fafaff;border-bottom:1px solid var(--border)}.topicHead h2{margin:0 0 3px}.topicBody{padding:20px}.topicBody h3{color:#423bb0;margin:18px 0 7px}.formula{padding:13px 15px;border-left:4px solid var(--primary);background:#f4f3ff;border-radius:9px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;overflow:auto}.note{padding:13px 15px;background:#fff8df;border:1px solid #f2df9c;border-radius:10px}.tableWrap{overflow:auto}.tbl{border-collapse:collapse;width:100%;min-width:580px}.tbl th,.tbl td{border:1px solid var(--border);padding:9px;text-align:left}.tbl th{background:#f5f5ff}
+.quiz{margin-top:20px;padding:18px;background:#f8f8ff;border:1px solid #e1defe;border-radius:15px}.q{padding:14px 0;border-bottom:1px solid var(--border)}.q:last-child{border-bottom:0}.q label{display:block;margin:7px 0;padding:9px 11px;border:1px solid var(--border);border-radius:9px;background:#fff;cursor:pointer}.q label:hover{background:#f5f5ff}.result{font-weight:800;margin-top:12px}.correct{color:var(--good)}.wrong{color:var(--bad)}
+.search{width:100%;padding:13px 15px;border:1px solid var(--border);border-radius:12px;font-size:1rem;margin:10px 0 18px}.music{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:center}.music iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:14px}.muted{color:var(--muted)}footer{margin-top:35px;padding:25px 18px;text-align:center;border-top:1px solid var(--border);color:var(--muted);font-size:.9rem}
+@media(max-width:720px){.navin{align-items:flex-start;flex-direction:column}.music{grid-template-columns:1fr}.heroIn{padding-top:45px}.container{padding-top:22px}.topicBody{padding:16px}}
+</style></head><body><nav class="nav"><div class="navin"><a class="brand" href="index.html">Ruang Belajar XI</a>
+    <div class="links"><a href="index.html">Beranda</a><a href="fisika.html">Fisika</a><a href="kimia.html">Kimia</a><a href="biologi.html">Biologi</a><a href="quiz.html">Quiz</a></div></div></nav><section class="hero"><div class="heroIn"><div class="eyebrow">Materi Lengkap</div><h1>Fisika Kelas XI</h1><p>Konsep, rumus inti, dan penerapan.</p></div></section><main class="container"><input id="search" class="search" oninput="filterTopics()" placeholder="Cari topik Fisika..."><section class="topic"><div class="topicHead"><h2>Fluida Statis</h2><div class="muted">Tekanan pada fluida diam.</div></div><div class="topicBody">
+<p>Fluida adalah zat yang dapat mengalir, meliputi cairan dan gas. Pada fluida statis, kita mempelajari tekanan dan gaya pada fluida yang tidak bergerak.</p>
+<h3>Tekanan</h3><div class="formula">P = F/A</div><p>P adalah tekanan (Pa), F gaya tegak lurus permukaan (N), dan A luas permukaan (m²).</p>
+<h3>Tekanan hidrostatis</h3><div class="formula">P = ρgh</div><p>Tekanan bertambah ketika kedalaman bertambah. Jika memperhitungkan tekanan atmosfer: P_total = P₀ + ρgh.</p>
+<h3>Hukum Pascal</h3><p>Tekanan yang diberikan pada fluida dalam ruang tertutup diteruskan sama besar ke segala arah.</p><div class="formula">F₁/A₁ = F₂/A₂</div>
+<h3>Hukum Archimedes</h3><p>Benda yang dicelupkan ke dalam fluida mendapat gaya ke atas sebesar berat fluida yang dipindahkan.</p><div class="formula">F_A = ρ_f g V_terdesak</div>
+<p><b>Penerapan:</b> dongkrak hidrolik, rem hidrolik, kapal, hidrometer, dan balon.</p>
+    <div class="quiz"><h3>📝 Quiz: Fluida Statis</h3><form id="f346765520449849259"><div class="q" data-answer="1"><b>1. Tekanan hidrostatis bergantung pada...</b><label><input type="radio" name="q1" value="0"> A. massa benda</label><label><input type="radio" name="q1" value="1"> B. kedalaman, massa jenis, dan g</label><label><input type="radio" name="q1" value="2"> C. warna cairan</label><label><input type="radio" name="q1" value="3"> D. luas permukaan saja</label></div></form>
+    <button class="btn" onclick="grade('f346765520449849259','r346765520449849259')">Periksa Jawaban</button><div id="r346765520449849259" class="result"></div></div></div></section><section class="topic"><div class="topicHead"><h2>Fluida Dinamis</h2><div class="muted">Fluida yang bergerak dan persamaan alirannya.</div></div><div class="topicBody">
+<p>Fluida dinamis membahas gerak fluida. Pada aliran ideal, fluida dianggap tidak kental dan tidak mengalami kehilangan energi karena gesekan.</p>
+<h3>Persamaan kontinuitas</h3><div class="formula">A₁v₁ = A₂v₂</div><p>Jika luas penampang mengecil, kecepatan aliran meningkat.</p>
+<h3>Persamaan Bernoulli</h3><div class="formula">P + ½ρv² + ρgh = konstan</div><p>Persamaan ini menyatakan hubungan tekanan, energi kinetik per volume, dan energi potensial per volume.</p>
+<h3>Debit</h3><div class="formula">Q = V/t = Av</div><p>Q menyatakan volume fluida yang mengalir tiap satuan waktu.</p>
+<p><b>Penerapan:</b> venturimeter, penyemprot, sayap pesawat, pipa air, dan aliran sungai.</p>
+    <div class="quiz"><h3>📝 Quiz: Fluida Dinamis</h3><form id="f4898247078558861678"><div class="q" data-answer="2"><b>1. Menurut kontinuitas, jika luas penampang pipa diperkecil maka kecepatan fluida...</b><label><input type="radio" name="q1" value="0"> A. menurun</label><label><input type="radio" name="q1" value="1"> B. tetap</label><label><input type="radio" name="q1" value="2"> C. meningkat</label><label><input type="radio" name="q1" value="3"> D. menjadi nol</label></div></form>
+    <button class="btn" onclick="grade('f4898247078558861678','r4898247078558861678')">Periksa Jawaban</button><div id="r4898247078558861678" class="result"></div></div></div></section><section class="topic"><div class="topicHead"><h2>Suhu dan Kalor</h2><div class="muted">Hubungan suhu, kalor, perubahan wujud, dan perpindahan kalor.</div></div><div class="topicBody">
+<p>Suhu menunjukkan derajat panas/dingin suatu benda, sedangkan kalor adalah energi yang berpindah akibat perbedaan suhu.</p>
+<h3>Kalor untuk perubahan suhu</h3><div class="formula">Q = mcΔT</div>
+<h3>Kalor laten</h3><div class="formula">Q = mL</div><p>Digunakan saat terjadi perubahan wujud tanpa perubahan suhu selama proses ideal.</p>
+<h3>Asas Black</h3><div class="formula">Q_lepas = Q_terima</div><p>Dalam sistem terisolasi, kalor yang dilepas benda bersuhu lebih tinggi sama dengan kalor yang diterima benda bersuhu lebih rendah.</p>
+<h3>Perpindahan kalor</h3><p><b>Konduksi:</b> melalui zat tanpa perpindahan massa secara keseluruhan. <b>Konveksi:</b> disertai gerak fluida. <b>Radiasi:</b> melalui gelombang elektromagnetik.</p>
+    <div class="quiz"><h3>📝 Quiz: Suhu dan Kalor</h3><form id="f515685810159648546"><div class="q" data-answer="0"><b>1. Rumus kalor untuk menaikkan suhu benda adalah...</b><label><input type="radio" name="q1" value="0"> A. Q=mcΔT</label><label><input type="radio" name="q1" value="1"> B. Q=mL</label><label><input type="radio" name="q1" value="2"> C. P=F/A</label><label><input type="radio" name="q1" value="3"> D. W=Fs</label></div></form>
+    <button class="btn" onclick="grade('f515685810159648546','r515685810159648546')">Periksa Jawaban</button><div id="r515685810159648546" class="result"></div></div></div></section><section class="topic"><div class="topicHead"><h2>Teori Kinetik Gas</h2><div class="muted">Model mikroskopis gas dan persamaan gas ideal.</div></div><div class="topicBody">
+<p>Teori kinetik gas menghubungkan sifat makroskopis gas dengan gerak partikel-partikelnya.</p>
+<h3>Asumsi gas ideal</h3><ul><li>Partikel bergerak acak.</li><li>Ukuran partikel diabaikan dibanding jarak antarpartikel.</li><li>Tumbukan elastis.</li><li>Gaya antarmolekul diabaikan kecuali saat tumbukan.</li></ul>
+<h3>Persamaan gas ideal</h3><div class="formula">PV = nRT</div><p>P tekanan, V volume, n jumlah mol, R konstanta gas, T suhu mutlak (K).</p>
+<h3>Energi kinetik rata-rata</h3><div class="formula">E_k rata-rata = 3/2 kT</div><p>Semakin tinggi suhu mutlak, semakin besar energi kinetik rata-rata partikel.</p>
+    <div class="quiz"><h3>📝 Quiz: Teori Kinetik Gas</h3><form id="f8430542344439264348"><div class="q" data-answer="2"><b>1. Satuan suhu yang digunakan dalam PV=nRT adalah...</b><label><input type="radio" name="q1" value="0"> A. Celsius</label><label><input type="radio" name="q1" value="1"> B. Fahrenheit</label><label><input type="radio" name="q1" value="2"> C. Kelvin</label><label><input type="radio" name="q1" value="3"> D. Reamur</label></div></form>
+    <button class="btn" onclick="grade('f8430542344439264348','r8430542344439264348')">Periksa Jawaban</button><div id="r8430542344439264348" class="result"></div></div></div></section><section class="topic"><div class="topicHead"><h2>Termodinamika</h2><div class="muted">Hubungan kalor, usaha, dan energi dalam.</div></div><div class="topicBody">
+<p>Termodinamika mempelajari perubahan energi yang melibatkan kalor dan usaha.</p>
+<h3>Hukum I Termodinamika</h3><div class="formula">ΔU = Q − W</div><p>Dengan W sebagai usaha yang dilakukan sistem. Jika konvensi tanda berbeda digunakan, perhatikan definisi usaha pada soal.</p>
+<h3>Proses gas</h3><p><b>Isotermal:</b> suhu tetap. <b>Isobarik:</b> tekanan tetap. <b>Isokhorik:</b> volume tetap sehingga usaha oleh gas ideal pada proses sederhana bernilai nol. <b>Adiabatik:</b> tidak ada pertukaran kalor (Q=0).</p>
+<h3>Hukum II</h3><p>Proses alami memiliki arah dan tidak mungkin mengubah seluruh kalor menjadi kerja secara sempurna dalam satu siklus.</p>
+    <div class="quiz"><h3>📝 Quiz: Termodinamika</h3><form id="f7579920824004748571"><div class="q" data-answer="0"><b>1. Pada proses adiabatik, nilai Q adalah...</b><label><input type="radio" name="q1" value="0"> A. 0</label><label><input type="radio" name="q1" value="1"> B. 1</label><label><input type="radio" name="q1" value="2"> C. maksimum</label><label><input type="radio" name="q1" value="3"> D. tak hingga</label></div></form>
+    <button class="btn" onclick="grade('f7579920824004748571','r7579920824004748571')">Periksa Jawaban</button><div id="r7579920824004748571" class="result"></div></div></div></section><section class="topic"><div class="topicHead"><h2>Gelombang dan Bunyi</h2><div class="muted">Getaran yang merambat membawa energi.</div></div><div class="topicBody">
+<p>Gelombang adalah getaran yang merambat dan membawa energi. Gelombang mekanik memerlukan medium, sedangkan gelombang elektromagnetik dapat merambat tanpa medium.</p>
+<h3>Besaran gelombang</h3><div class="formula">v = fλ</div><p>v cepat rambat, f frekuensi, λ panjang gelombang.</p>
+<h3>Bunyi</h3><p>Bunyi adalah gelombang mekanik longitudinal yang memerlukan medium. Frekuensi menentukan tinggi nada, amplitudo berkaitan dengan kuat-lemah bunyi, dan bentuk gelombang memengaruhi warna bunyi.</p>
+<h3>Resonansi</h3><p>Terjadi ketika frekuensi gaya luar mendekati frekuensi alami sistem sehingga amplitudo dapat membesar.</p>
+    <div class="quiz"><h3>📝 Quiz: Gelombang dan Bunyi</h3><form id="f6489518929088425308"><div class="q" data-answer="1"><b>1. Hubungan cepat rambat, frekuensi, dan panjang gelombang adalah...</b><label><input type="radio" name="q1" value="0"> A. v=f/λ</label><label><input type="radio" name="q1" value="1"> B. v=fλ</label><label><input type="radio" name="q1" value="2"> C. v=λ/f</label><label><input type="radio" name="q1" value="3"> D. v=f+λ</label></div></form>
+    <button class="btn" onclick="grade('f6489518929088425308','r6489518929088425308')">Periksa Jawaban</button><div id="r6489518929088425308" class="result"></div></div></div></section><section class="topic"><div class="topicHead"><h2>Optik Geometris</h2><div class="muted">Pemantulan, pembiasan, dan pembentukan bayangan.</div></div><div class="topicBody">
+<p>Cahaya dapat mengalami pemantulan dan pembiasan. Pada cermin dan lensa, pembentukan bayangan dianalisis menggunakan sinar-sinar istimewa.</p>
+<h3>Hukum Snellius</h3><div class="formula">n₁ sin θ₁ = n₂ sin θ₂</div>
+<h3>Persamaan cermin/lensa tipis</h3><div class="formula">1/f = 1/s + 1/s'</div><div class="formula">M = h'/h = −s'/s</div>
+<p>Tanda positif/negatif bergantung pada konvensi yang digunakan. Cermin cekung dan lensa cembung dapat menghasilkan bayangan nyata maupun maya bergantung posisi benda.</p>
+    <div class="quiz"><h3>📝 Quiz: Optik Geometris</h3><form id="f4823177512131357601"><div class="q" data-answer="0"><b>1. Pembiasan terjadi karena cahaya...</b><label><input type="radio" name="q1" value="0"> A. berubah medium sehingga arah/kelajuannya dapat berubah</label><label><input type="radio" name="q1" value="1"> B. selalu berhenti</label><label><input type="radio" name="q1" value="2"> C. kehilangan semua energinya</label><label><input type="radio" name="q1" value="3"> D. berubah menjadi bunyi</label></div></form>
+    <button class="btn" onclick="grade('f4823177512131357601','r4823177512131357601')">Periksa Jawaban</button><div id="r4823177512131357601" class="result"></div></div></div></section><a class="btn" href="quiz.html#fisika">Kumpulan Quiz Fisika →</a></main><footer>© 2026 Ruang Belajar XI</footer><script>
+function grade(formId, outId){
+ const f=document.getElementById(formId), out=document.getElementById(outId);
+ let score=0,total=0;
+ f.querySelectorAll('[data-answer]').forEach(q=>{
+   total++;
+   const a=q.querySelector('input:checked');
+   if(a && a.value===q.dataset.answer) score++;
+ });
+ out.textContent=`Nilai: ${score}/${total} (${Math.round(score/total*100)}%)`;
+ out.className='result '+(score===total?'correct':'');
+}
+function filterTopics(){
+ const s=(document.getElementById('search')?.value||'').toLowerCase();
+ document.querySelectorAll('.topic,.card[data-topic]').forEach(x=>{
+   x.style.display=x.innerText.toLowerCase().includes(s)?'':'none';
+ });
+}
+</script></body></html>
